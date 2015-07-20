@@ -61,7 +61,6 @@
     '("globalcolor" 1)
     "textbf"
     "textit"
-    "BackgroundPic"
     "maketitle")
    (LaTeX-add-labels
     "sec-1"
