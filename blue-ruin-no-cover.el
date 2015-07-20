@@ -65,10 +65,6 @@
 \\pagenumbering{arabic}
 \\makeatletter
 
-%The maketitle macro now only includes the titling and not the background. 
-\\def\\maketitle{ \\newgeometry{margin=1in} \\thispagestyle{empty} \\vfill \\null \\cleardoublepage\\restoregeometry}
-
-
 
 \\setcounter{secnumdepth}{0}
 
