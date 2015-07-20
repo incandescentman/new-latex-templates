@@ -1,5 +1,5 @@
 (add-to-list 'org-latex-classes
-  '("signal-flare-wide"
+  '("blue-ruin"
 "
 
 \\documentclass[12pt]{article}
@@ -41,6 +41,10 @@
 \\definecolor{electricblue}{HTML}{05ADF3}
 
 
+\\newtoks\\leftheader 
+\\newtoks\\leftheaderurl
+\\newtoks\\coverimage
+
 
 \\hyphenpenalty=5000 
 \\tolerance=1000
@@ -69,7 +73,7 @@
 %inside the tikzpicture environment, you can do anything you want with the image
 \\begin{tikzpicture}
 
-\\node [inner sep=0pt,outer sep=0pt] at (0,0) {\\includegraphics[width=\\paperwidth,height=\\paperheight]{/Users/jay/Pics/wallpapers/25-003.jpg}};
+\\node [inner sep=0pt,outer sep=0pt] at (0,0) {\\includegraphics[width=\\paperwidth,height=\\paperheight]{\\the\\coverimage}};
 
 \\node at  (0,5) [opacity=1.0] {\\parbox[b][0.5\\textheight]{\\textwidth}{%
   \\begin{raggedright}
@@ -78,7 +82,7 @@
   {\\mytitlefont\\fontsize{75}{85}\\bfseries{\\@title}\\par}
     \\vskip 1cm
     
-    {\\myauthorfont\\fontsize{30}{40}{{\\bfseries{\\@author}\\par}}}
+    {\\myauthorfont\\fontsize{30}{40}{{\\bfseries{\\@degree}\\par}}}
 
 \\vfill
 \\end{raggedright}}};
@@ -88,11 +92,11 @@
 {\\myauthorfont\\Large \\bfseries{CONFIDENTIAL}}
     \\newline
     \\newline
-{\\myauthorfont\\Large © 2014 Jay Dixit}
+{\\myauthorfont\\Large © 2015 \\@author}
     \\newline
           {\\myauthorfont\\Large \\href{mailto:dixit@aya.yale.edu}{dixit@aya.yale.edu}}
         \\newline
-          {\\myauthorfont\\Large \\href{http://jaydixit.com}{jaydixit.com}}
+          {\\myauthorfont\\Large \\href{http://jaydixit.com}{\\@degree}}
         \\newline
     {\\myauthorfont\\Large \\@date\\par}
 \\end{raggedright}
@@ -120,9 +124,9 @@
 \\usepackage{fancyhdr}
 \\pagestyle{fancy}
 \\renewcommand{\\sectionmark}[1]{\\markboth{#1}{}}
-\\lhead{\\href{http://jaydixit.com}{Jay Dixit}}
+\\lhead{\\href{\\the\\leftheaderurl}{\\the\\leftheader}}
 \\chead{}
-\\rhead{Signal Flare: {\\nouppercase{\\leftmark}}}
+\\rhead{\\@title: {\\nouppercase{\\leftmark}}}
 \\lfoot{}
 \\cfoot{}
 \\rfoot{}
