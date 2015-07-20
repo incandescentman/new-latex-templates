@@ -1,3 +1,5 @@
+(provide 'blue-ruin)
+
 (add-to-list 'org-latex-classes
   '("blue-ruin"
 "
@@ -82,7 +84,7 @@
   {\\mytitlefont\\fontsize{75}{85}\\bfseries{\\@title}\\par}
     \\vskip 1cm
     
-    {\\myauthorfont\\fontsize{30}{40}{{\\bfseries{\\@degree}\\par}}}
+    %{\\myauthorfont\\fontsize{30}{40}{{\\bfseries{\\@degree}\\par}}}
 
 \\vfill
 \\end{raggedright}}};
@@ -96,7 +98,7 @@
     \\newline
           {\\myauthorfont\\Large \\href{mailto:dixit@aya.yale.edu}{dixit@aya.yale.edu}}
         \\newline
-          {\\myauthorfont\\Large \\href{http://jaydixit.com}{\\@degree}}
+          %{\\myauthorfont\\Large \\href{http://jaydixit.com}{\\@degree}}
         \\newline
     {\\myauthorfont\\Large \\@date\\par}
 \\end{raggedright}
@@ -132,7 +134,7 @@
 \\rfoot{}
 \\usepackage{listings}
 \\setlength{\\parindent}{0pt}
-\\setlength{\\parskip}{6pt plus 2pt minus 1pt}
+\\setlength{\\parskip}{12pt plus 2pt minus 1pt} %Space between paragraphs
 \\usepackage{fancyvrb}
 \\usepackage{enumerate}
 \\usepackage{ctable}
@@ -153,13 +155,17 @@
 \\newcommand{\\textsubscr}[1]{\\ensuremath{_{\\scriptsize\\textrm{#1}}}}
 
 \\usepackage{enumitem}
-\\setlist{nolistsep}
+%\\setlist{nolistsep}
+\\setlist{topsep=0pt}
 \\renewcommand{\\labelitemi}{$\\bullet$}
 \\renewcommand{\\labelitemii}{$\\bullet$}
 \\renewcommand{\\labelitemiii}{$\\bullet$}
 \\renewcommand{\\labelitemiv}{$\\bullet$}
 
 \\usepackage[sc]{titlesec}
+\titlespacing*{\section}{0pt}{6pt}{-7pt}
+\titlespacing*{\subsection}{0pt}{0pt}{-7pt}
+\titlespacing*{\subsubsection}{0pt}{6pt}{-5pt}
 
 \\titleformat*{\\section}{\\normalfont\\fontsize{36}{36}\\raggedright\\sffamily\\color{pinterestred}}
 \\titleformat*{\\subsection}{\\normalfont\\fontsize{20}{20}\\scshape\\color{electricblue}}
