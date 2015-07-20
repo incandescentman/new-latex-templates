@@ -1,1 +1,0 @@
-# new-latex-templates

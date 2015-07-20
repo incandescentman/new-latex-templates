@@ -1,4 +1,4 @@
-
+(require 'ox-latex)
 
 ;; Find LaTeX on my system
 (if (eq window-system 'mac)
@@ -18,4 +18,4 @@
 (setq org-export-with-section-numbers t)
 (setq org-export-with-toc t)
 
-(load "/Users/jay/elisp/signal-flare-wide.el")
+(load "~/Dropbox/github/new-latex-templates/blue-ruin.el")
