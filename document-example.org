@@ -2,7 +2,7 @@
 #+AUTHOR:John Doe
 #+LaTeX_CLASS: blue-ruin-no-cover
 #+EMAIL:     dixit@aya.yale.edu
-#+OPTIONS:   H:5 num:t toc:t :nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   H:5 num:t toc:nil :nil @:t ::t |:t ^:t -:t f:t *:t <:t
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
 #+EXPORT_EXCLUDE_TAGS: noexport
 #+LATEX_HEADER: \setcounter{secnumdepth}{0}

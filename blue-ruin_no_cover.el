@@ -124,6 +124,8 @@
 \\hypersetup{colorlinks, citecolor=electricblue,filecolor=electricblue,linkcolor=electricblue,urlcolor=electricblue}
 
 
+\\renewcommand\\maketitle{}
+
 
 
       [NO-DEFAULT-PACKAGES]
